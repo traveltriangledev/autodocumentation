@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<title>Test Recorder</title>
+
+<link rel="stylesheet" type="text/css" href="./style.css" />
+
+<script src="control.js"></script>
+</head>
+<body>
+<form name="control">
+<div><strong>URL:</strong>
+  <input style="background-color: aliceblue;border-radius: 10px;" type="text" size="80" name="url" />
+  <div style="padding-top: 5px;"></div>
+  <input type="submit" id="bgo" name="submit" value=" Go " /> 
+  <input type="submit" id="bstop" name="bstop" value="Stop Recording" style="display:none;" /> 
+  <input type="submit" id="bcomment" name="bcomment" value="Add Comment" style="display: none;" />
+  <input type="submit" id="bexport" name="bexport" value="export recorded test steps" style="display: none;" />
+  <input type="submit" id="bexportxy" name="bexportxy" value="" style="display: none;" />
+  <input type="submit" id="bexporttestlink" value="export in TestLink format" style="display:none"/>
+  <input type="submit" id="bdoc" name="bdoc" value="Export doc" style="display: none;" /> 
+</div> 
+<div id="comment" style="display:none">
+  <strong>Comment:</strong> 
+  <textarea id="ctext" id="ctext" name="ctext"
+   rows="8" cols="80"></textarea> 
+  <br />
+  <input type="submit" id="bsavecomment" name="c1" value=" Save " /> 
+  <input type="submit" id="bcancelcomment" name="c2" value=" Cancel " />
+</div>
+</form>
+<div id="logo"></div>
+<p class="tagline"> 
+    <span id="tagline"></span>
+    <a href="" target="_new" title=""></a></p>
+</body>
+</html>

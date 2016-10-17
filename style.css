@@ -1,0 +1,26 @@
+body { 
+  font-family: verdana; 
+  font-size: 80%;
+  text-decoration: none;
+  color: #555753; 
+  background: #ffffff;
+  margin: 0px; 
+}
+
+.tagline {
+	color: grey;
+}
+
+#logo {
+	float: right;
+}
+
+input[type=submit], input[type=button] {
+	color: black;
+    padding: 0.25em 0.5em;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: monospace;
+    background-color: #ffe866;
+    font-weight: bolder;	
+}

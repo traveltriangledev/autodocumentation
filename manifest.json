@@ -1,0 +1,28 @@
+{
+  "name": "AUTO-DOCUMENTATION",
+  "version": "0.1",
+  "manifest_version": 2,
+  "update_url": "http://127.0.0.1",
+  "description": "Record your activities over browser as manual test steps.",
+  "icons": {"48": "auto-document-128.png",
+          "128": "auto-document-128.png" },
+  "browser_action": {
+    "default_icon": "auto-document-128.png",
+    "default_popup": "control.html",
+    "default_title": "Auto Document"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+     "tabs",
+     "background",
+     "http://*/*"
+  ],
+  "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["recorder.js"]
+  }],
+  "offline_enabled": true,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
